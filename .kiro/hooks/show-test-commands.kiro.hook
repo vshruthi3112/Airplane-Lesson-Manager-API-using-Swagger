@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Show Test Commands",
+  "description": "Shows how to test the API when triggered.",
+  "version": "1",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "echo \"Test your API at: http://localhost:8080/swagger-ui.html\""
+  }
+}

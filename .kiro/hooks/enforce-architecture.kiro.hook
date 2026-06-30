@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "name": "Enforce Architecture",
+  "description": "Ensures code follows Controller → Service → Repository layering.",
+  "version": "1",
+  "when": {
+    "type": "preToolUse",
+    "toolTypes": ["write"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Verify this code respects layered architecture: controllers don't touch repositories directly, business logic stays in services. Flag violations."
+  }
+}

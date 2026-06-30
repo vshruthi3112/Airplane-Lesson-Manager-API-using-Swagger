@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "name": "Check Spring Patterns",
+  "description": "Checks edited Java files follow project conventions.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["**/*.java"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Check this file uses constructor injection, has a class doc comment, and keeps controllers thin. Briefly note any issues."
+  }
+}
