@@ -139,10 +139,3 @@ src/main/java/com/example/lessonmanager/
 3. **ResponseEntity** — Gives full control over HTTP responses
 4. **Optional** — Handles "not found" without null pointer exceptions
 5. **Swagger** — Free interactive documentation from annotations
-
-## What's Next (Week 3+)
-
-- Add Spring Data JPA + H2 database
-- Add validation (`@Valid`, `@NotBlank`)
-- Add exception handling (`@ControllerAdvice`)
-- Add pagination and filtering
