@@ -32,9 +32,9 @@ mvn spring-boot:run
 
 | URL                                          | What it does                  |
 |----------------------------------------------|-------------------------------|
-| http://localhost:8080/swagger-ui.html         | 🎯 Interactive Swagger UI     |
-| http://localhost:8080/lessons                 | GET all lessons (JSON)        |
-| http://localhost:8080/v3/api-docs             | Raw OpenAPI spec              |
+| http://localhost:9090/swagger-ui.html         | 🎯 Interactive Swagger UI     |
+| http://localhost:9090/lessons                 | GET all lessons (JSON)        |
+| http://localhost:9090/v3/api-docs             | Raw OpenAPI spec              |
 
 ## API Endpoints
 
@@ -50,13 +50,13 @@ DELETE /lessons/{id}  → Delete a lesson
 
 ```bash
 # Get all lessons
-curl http://localhost:8080/lessons
+curl http://localhost:9090/lessons
 
 # Get lesson with ID 1
-curl http://localhost:8080/lessons/1
+curl http://localhost:9090/lessons/1
 
 # Create a new lesson
-curl -X POST http://localhost:8080/lessons \
+curl -X POST http://localhost:9090/lessons \
   -H "Content-Type: application/json" \
   -d '{
     "title": "Engine Start Procedure",
@@ -67,7 +67,7 @@ curl -X POST http://localhost:8080/lessons \
   }'
 
 # Update lesson with ID 1
-curl -X PUT http://localhost:8080/lessons/1 \
+curl -X PUT http://localhost:9090/lessons/1 \
   -H "Content-Type: application/json" \
   -d '{
     "title": "Updated Title",
@@ -78,7 +78,7 @@ curl -X PUT http://localhost:8080/lessons/1 \
   }'
 
 # Delete lesson with ID 2
-curl -X DELETE http://localhost:8080/lessons/2
+curl -X DELETE http://localhost:9090/lessons/2
 ```
 
 ## Project Structure
